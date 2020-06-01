@@ -1,0 +1,28 @@
+{
+  "name": "@mathshistory/katex-server",
+  "version": "0.1.0",
+  "description": "Runs a HTTP server which renders KaTeX, to speed up build times.",
+  "scripts": {
+    "prepare": "npm run-script build",
+    "build": "babel src -d lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Ferguson",
+  "license": "MIT",
+  "bin": {
+    "katex-server": "./lib/http.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mathshistory/katex-server"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "katex": "^0.11.1"
+  }
+}
