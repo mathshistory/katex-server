@@ -1,6 +1,6 @@
 {
   "name": "@mathshistory/katex-server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Runs a HTTP server which renders KaTeX, to speed up build times.",
   "scripts": {
     "prepare": "npm run-script build",
